@@ -2,12 +2,12 @@ import Styled, { css } from 'styled-components';
 
 const invertedButtonStyles = css`
     background-color: white;
-    color: rgba(0,96,255,1);
+    color: #5C7998;
     border: none;
     
     @media screen and (min-width: 800px){
         &:hover {
-          background-color: rgba(0,96,255,1);
+          background-color: #5C7998;
           color: white;
           border: none;
         }
@@ -15,14 +15,14 @@ const invertedButtonStyles = css`
 `;
 
 const buttonStyles = css`
-background-color: black;
+background-color: #5C7998;
     color: white;
     border: none;
 
     @media screen and (min-width: 800px){
         &:hover {
             background-color: white;
-            color: black;
+            color: #5C7998;
             border: 1px solid black;
         }
     }
@@ -54,6 +54,7 @@ export const CustomButtonContainer = Styled.button`
     cursor: pointer;
     display: flex;
     justify-content: center;
+    z-index: 2;
   
     ${GetButtonStyles}
     

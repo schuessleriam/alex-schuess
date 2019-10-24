@@ -41,7 +41,6 @@ export const ProjectsButton = Styled(CustomButton)`
     grid-column: 2 / 3;
     grid-row: 4 / 5;
     font-size: 18px;
-    z-index: 2;
 `;
 
 export const StyleBox = Styled.div`
@@ -50,4 +49,18 @@ export const StyleBox = Styled.div`
     margin: -20px;
     background: white;
     opacity: 0.1;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: -200px;
+      top: 200px;
+      width: 0;
+      height: 0;
+      border: 200px solid transparent;
+      border-top-color: white;
+      grid-column: 3 / 4;
+      grid-row: 4 / 6;
+      margin-left: 150px;
+
 `;

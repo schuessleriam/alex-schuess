@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import Styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
     body{
@@ -25,4 +25,9 @@ export const GlobalStyle = createGlobalStyle`
     *{
         box-sizing: border-box;
     }
+`;
+
+export const AppContainer = Styled.div`
+    display: flex;
+    flex-direction: column;
 `;
