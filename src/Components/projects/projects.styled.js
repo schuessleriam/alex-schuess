@@ -4,7 +4,7 @@ export const ProjectsContainer = Styled.div`
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 800px;
+    height: 1000px;
     background: white;
 `;
 

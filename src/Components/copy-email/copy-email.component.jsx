@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {CopyEmailContainer, Clippy, Email, Check} from './copy-email.styled';
 
 
-const CopyEmail = () => {
+const CopyEmail = ({bigger}) => {
 
     const [emailHover, setEmailHover] = useState({
         show: false,
@@ -41,11 +41,11 @@ const CopyEmail = () => {
         >   
             {
             emailHover.show && emailHover.copied ? 
-                <Check/>
+                <Check bigger={bigger}/>
             : emailHover.show ?
-                <Clippy/> 
+                <Clippy bigger={bigger}/> 
             :
-                <Email/> 
+                <Email bigger={bigger}/> 
             }        
         </CopyEmailContainer>
     );

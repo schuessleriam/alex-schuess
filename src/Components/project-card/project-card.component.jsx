@@ -45,7 +45,7 @@ const ProjectCard = ({
                     <BrowserLink/> 
                     <LinkText>Visit The Live App</LinkText> 
                 </LinkContainer>
-            : null
+            : <div/>
             }
             <LinkContainer href={repo} onMouseEnter={handleHover} onMouseLeave={handleNoHover}> 
                 <CodeLink/> 

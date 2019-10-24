@@ -11,13 +11,13 @@ export const CoverPhotoContainer = Styled.img`
     height: auto;
     padding: 0px;
     border: 0px;
-    opacity: 0.7;
+    opacity: 0.8;
 `;
 
 export const HomePageContent = Styled.div`
     display: grid;
     grid-template-columns: 15vw 1fr 1fr 1fr;
-    grid-template-rows: 15vw 80px 120px 80px 1fr 1fr;
+    grid-template-rows: 15vw 130px 180px 120px 1fr 1fr;
     width: 100%;
     height: 65vw;
     position: absolute;
@@ -27,20 +27,20 @@ export const HomePageContent = Styled.div`
 export const Greeting = Styled.h1`
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    font-size: 54px;
+    font-size: 84px;
 `;
 
 export const Description = Styled.h3`
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-    font-size: 24px;
-    padding-left: 2px;
+    font-size: 34px;
+    padding-left: 4px;
 `;
 
 export const ProjectsButton = Styled(CustomButton)`
     grid-column: 2 / 3;
     grid-row: 4 / 5;
-    font-size: 18px;
+    font-size: 22px;
 `;
 
 export const StyleBox = Styled.div`
@@ -49,18 +49,5 @@ export const StyleBox = Styled.div`
     margin: -20px;
     background: white;
     opacity: 0.1;
-
-    &:after {
-      content: '';
-      position: absolute;
-      left: -200px;
-      top: 200px;
-      width: 0;
-      height: 0;
-      border: 200px solid transparent;
-      border-top-color: white;
-      grid-column: 3 / 4;
-      grid-row: 4 / 6;
-      margin-left: 150px;
 
 `;

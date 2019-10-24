@@ -20,24 +20,24 @@ export const HeaderImage = Styled.img`
 
 export const ProjectHeader = Styled.h2`
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     margin: 0px;
 `;
 
 export const ProjectSubHeader = Styled.h3`
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     margin: 0px;
 `;
 
 export const DescriptionContainer = Styled.span`
     text-align: center;
-    font-size: 12px;
+    font-size: 18px;
 `;
 
 export const ProjectFooter = Styled.h3`
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 1px;
 `;
 
@@ -67,10 +67,11 @@ export const BrowserLink = Styled(BrowserIcon)`
 
 export const LinkText = Styled.div`
     align-self: center;
+    font-size: 20px;
 `;
 
 export const ProjectCardContainer = Styled.div`
-    height: 450px;
+    height: 550px;
     width: 25vw;
     background: #EFF1FA;
     display: flex;

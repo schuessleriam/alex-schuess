@@ -10,7 +10,8 @@ import { AboutContainer,
          LocationContainer,
          LocationIcon,
          LocationText,
-         StyleBox,
+         StyleBoxOne,
+         StyleBoxTwo,
          ReduxIcon,
          ReactIcon,
          NodeIcon
@@ -23,7 +24,8 @@ const About = () => (
     <AboutContainer>
         <AboutHeader>About Me</AboutHeader>
         <AboutContent>
-            <StyleBox/>
+            <StyleBoxOne/>
+            <StyleBoxTwo/>
             <ReduxIcon src={ReduxImage}/>
             <ReactIcon src={ReactImage}/>
             <NodeIcon/>
@@ -42,9 +44,9 @@ const About = () => (
                 <InfoBoxHeader>Techinical Skills</InfoBoxHeader>
                 <InfoBoxContentList>
                     <li>HTML/CSS, PHP</li>
-                    <li>JavaScript:</li>
+                    <li>JavaScript :</li>
                     <InfoBoxContentList>
-                        <li>React.js: Redux (Sagas), Styled Components</li> 
+                        <li>React.js : Redux (Sagas), Styled Components</li> 
                         <li>ES6, Node.js, jQuery (Ajax)</li>
                     </InfoBoxContentList>
                     <li>SQL, Firebase</li>

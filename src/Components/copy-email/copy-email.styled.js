@@ -14,14 +14,29 @@ const IconStyles = css`
     color: white;
 `;
 
+const IconStylesBigger = css`
+    height: 100px;
+    width: 50px;
+    cursor: pointer;
+    color: white;
+`;
+
+const GetIconStyles = (props) => {
+    if(props.bigger){
+        return IconStylesBigger;
+    }else{
+        return IconStyles;
+    }
+}
+
 export const Email = Styled(EmailIcon)`
-    ${IconStyles};
+    ${GetIconStyles};
 `;
 
 export const Clippy = Styled(ClippyIcon)`
-    ${IconStyles};
+    ${GetIconStyles};
 `;
 
 export const Check = Styled(CheckIcon)`
-    ${IconStyles};
+    ${GetIconStyles};
 `;
