@@ -1,6 +1,7 @@
 import Styled from 'styled-components';
 import {ReactComponent as BrowserIcon} from './../../assets/browser.svg';
 import {ReactComponent as CodeIcon} from './../../assets/code.svg';
+import { Colors } from './../../global.styled';
 
 export const HeaderImageContainer = Styled.div`
     display: flex;
@@ -44,14 +45,13 @@ export const ProjectFooter = Styled.h3`
 export const LinkContainer = Styled.a`
     display: grid;
     grid-template-columns: 5vw 15vw;
-    padding-left: 40px;
+    padding-left: 50px;
     justify-content: center;
     align-content: center;
-    color: #5C7998;
+    color: ${Colors.accentDark};
 
     &:hover {
-        color: #6EB4FF;
-        fill: #6EB4FF;
+        fill: ${Colors.primeDark};
     }
 `;
 
@@ -73,26 +73,26 @@ export const LinkText = Styled.div`
 export const ProjectCardContainer = Styled.div`
     height: 550px;
     width: 25vw;
-    background: #EFF1FA;
+    background: ${Colors.accentLight};
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
-    fill: #5C7998;
+    fill: ${Colors.accentDark};
     cursor: pointer;
     padding: 0px 20px;
 
     &:hover {
-        color: #EFF1FA;
-        background: linear-gradient(165deg, #EFF1FA 0%, #5C7998 40%, #4D6988 100%);
-        fill: #EFF1FA;
+        color: ${Colors.accentLight};
+        background: ${Colors.main};
+        fill: ${Colors.accentLight};
 
         ${LinkContainer}{
-            color: #EFF1FA;
+            color: ${Colors.accentLight};
         }
 
         ${ProjectFooter} {
-            color: ${props => props.isHover ? null :'#6EB4FF'};
+            color: ${props => props.isHover ? null : Colors.primeDark};
         }
     }
 `;

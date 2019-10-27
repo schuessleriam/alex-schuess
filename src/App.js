@@ -1,12 +1,12 @@
 import React from 'react';
 import { AppContainer, GlobalStyle } from './global.styled';
 
-import Header from './Components/header/header.component';
-import Home from './Components/home/home.component';
-import About from './Components/about/about.component';
-import Projects from './Components/projects/projects.component';
-import Links from './Components/links/links.component';
-import Footer from './Components/footer/footer.component';
+import Header from './components/header/header.component';
+import Home from './components/home/home.component';
+import About from './components/about/about.component';
+import Projects from './components/projects/projects.component';
+import Links from './components/links/links.component';
+import Footer from './components/footer/footer.component';
 
 const App = () => (
   <AppContainer>

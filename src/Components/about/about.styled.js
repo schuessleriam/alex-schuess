@@ -1,4 +1,5 @@
 import Styled from 'styled-components';
+import { Colors } from './../../global.styled';
 import {ReactComponent as Location} from './../../assets/location.svg';
 import {ReactComponent as NodeImage} from './../../assets/nodejs-icon.svg';
 
@@ -7,6 +8,7 @@ export const AboutContainer = Styled.div`
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
+    color: ${Colors.primeDark};
 `;
 
 export const AboutHeader = Styled.h1`
@@ -17,37 +19,43 @@ export const AboutHeader = Styled.h1`
 `;
 
 export const AboutContent = Styled.div`
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-columns: 95px 30vw 1fr 50px;
     grid-template-rows: 300px 350px 200px;
-    grid-gap: 20px;
     letter-spacing: 2px;
     line-height: 42px;
+
 `;
 
 export const ReactIcon = Styled.img`
-    height: 170px;
+    height: 400px;
     width: auto;
     grid-column: 2 / 3;
     grid-row: 1 / 4;
+    margin-top: -150px;
+    margin-left: -200px;
+    opacity: 0.5;
 `;
 
 export const NodeIcon = Styled(NodeImage)`
-    height: 170px;
+    height: 300px;
     width: auto;
     grid-column: 2 / 3;
     grid-row: 1 / 4;
-    margin-left: 250px;
-    margin-top: 300px;
+    margin-top: 200px;
+    margin-left: 150px;
+    opacity: 0.5;
 `;
 
 export const ReduxIcon = Styled.img`
-    height: 170px;
+    height: 300px;
     width: auto;
     grid-column: 2 / 3;
     grid-row: 1 / 4;
-    margin-top: 600px;
+    margin-top: 500px;
+    margin-left: -50px;
+    opacity: 0.5;
 `;
 
 export const StyleBoxOne = Styled.div`
@@ -59,32 +67,32 @@ export const StyleBoxOne = Styled.div`
     z-index: -1;
     width: 0;
     height: 0;
-    border: 800px solid transparent;
-    border-bottom-color: white;
+    border: 600px solid transparent;
+    border-bottom-color: ${Colors.accentLight};
     position: relative;
-    top: -800px;
+    top: -600px;
 
     &:after {
     content: '';
     position: absolute;
-    left: -800px;
-    top: 800px;
+    left: -600px;
+    top: 600px;
     width: 0;
     height: 0;
-    border: 800px solid transparent;
-    border-top-color: white;
+    border: 600px solid transparent;
+    border-top-color: ${Colors.accentLight};
 `;
 
 export const StyleBoxTwo = Styled.div`
-    margin-left: -250px;
+    margin-left: -350px;
     grid-column: 1 / 3;
     grid-row: 1 / 4;
-    opacity: 0.05;
+    opacity: 0.15;
     z-index: -1;
     width: 0;
     height: 0;
     border: 400px solid transparent;
-    border-bottom-color: white;
+    border-bottom-color: ${Colors.accentDark};
     position: relative;
     top: -400px;
 
@@ -96,7 +104,7 @@ export const StyleBoxTwo = Styled.div`
     width: 0;
     height: 0;
     border: 400px solid transparent;
-    border-top-color: white;
+    border-top-color: ${Colors.accentDark};
 `;
 
 export const InfoBox = Styled.div`
@@ -105,13 +113,22 @@ export const InfoBox = Styled.div`
     grid-column: 3 / 4;
     justify-content: ${props => props.isFooter ? 'space-evenly' : null};
     font-size: 26px;
-    padding-bottom: 20px;
+    padding: 40px;
+    z-index: 2;
+    grid-row: ${props => props.education ? '1 / 2' : props.skills ? '2 / 3' :  '3 / 4' };
 `;
+
+export const ContentBox = Styled.div`
+    opacity: 0.15;
+    background: ${Colors.accentLight};
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+    z-index: 1;
+`
 
 export const InfoBoxHeader = Styled.h1`
     font-size: 36px;
     text-align: center;
-    color: white;
     margin: 0px;
     padding-bottom: 20px;
 `;
@@ -121,21 +138,24 @@ export const InfoBoxContentList = Styled.ul`
     margin-left: 40px;
 `;
 
-export const InfoBoxContent= Styled.div`
+export const InfoBoxContent = Styled.div`
     text-align: center;
+`;
+
+export const InfoHighlight= Styled.span`
+    color: ${Colors.accentLight};
 `;
 
 export const LocationContainer = Styled.div`
     display: flex;
     justify-content: center;
     align-content: center;
-    color: white;
     margin-left: -10px;
     padding-bottom: 40px;
 `;
 
 export const LocationIcon = Styled(Location)`
-    fill: white;
+    fill: ${Colors.primeDark};
     height: 40px;
     width: 20px;
 `;

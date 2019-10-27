@@ -1,9 +1,11 @@
 import Styled from 'styled-components';
 import CustomButton from './../custom-button/custom-button.component';
+import { Colors } from './../../global.styled';
 
 export const HomePageContainer = Styled.div`
     padding-bottom: 0px;
     width: 100%;
+    color: ${Colors.accentLight};
 `;
 
 export const CoverPhotoContainer = Styled.img`
@@ -47,7 +49,7 @@ export const StyleBox = Styled.div`
     grid-column: 2 / 4;
     grid-row: 2 / 6;
     margin: -20px;
-    background: white;
+    background: ${Colors.primeLight};
     opacity: 0.1;
 
 `;

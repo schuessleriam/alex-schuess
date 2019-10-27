@@ -10,7 +10,10 @@ const Projects = () => {
         <ProjectsContainer>
             <ProjectsHeader>Recent Projects</ProjectsHeader>
             <ProjectsContent>
-                <ProjectCard livePage="https://balbatross.herokuapp.com"
+                <ProjectCard
+                    infoPage='balbatross' 
+                    livePage="https://balbatross.herokuapp.com"
+                    livePageTitle='Visit The Live Website'
                     title="Balbatross Apperal"
                     subTitle="A React App"
                     repo='https://github.com/schuessleriam/balbatross'
@@ -19,6 +22,9 @@ const Projects = () => {
                     Browse, add to your cart, create an account, and checkout."
                 />
                 <ProjectCard 
+                    infoPage='lhsd'
+                    livePage='https://www.valpo.edu/church-relations/lhs-directory/'
+                    livePageTitle='See It In Use'
                     title="Lutheran High School Directory"
                     subTitle="A Data Managment System"
                     repo='https://github.com/schuessleriam/LHSD'
@@ -26,7 +32,10 @@ const Projects = () => {
                     description="A modernized and extended digital tool suite used to generate the 
                     multiple formats of the Valparaiso University Lutheran High School Directory."
                 />
-                <ProjectCard livePage="https://win-shifter.schuessleriam.repl.run"
+                <ProjectCard 
+                    livePage="https://win-shifter.schuessleriam.repl.run"
+                    livePageTitle='Try Out The REPL' 
+                    infoPage='shifter'
                     title="Season Shifter"
                     subTitle="A Command Line App"
                     repo='https://github.com/schuessleriam/Win-Shifter'

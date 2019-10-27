@@ -1,6 +1,7 @@
 import Styled from 'styled-components';
 import { ReactComponent as Github } from './../../assets/mark-github.svg';
 import { ReactComponent as BriefCase } from './../../assets/briefcase.svg';
+import { Colors } from './../../global.styled';
 
 export const LinksContainer = Styled.div`
     display: flex;
@@ -8,11 +9,10 @@ export const LinksContainer = Styled.div`
     width: 50vw;
     height: 800px;
     align-self: center;
-    color: white;
+    color: ${Colors.accentLight};
 `;
 
 export const LinksHeader = Styled.h1`
-    color: white;
     height: 200px;
     font-size: 54px;
     padding-top: 50px;
@@ -21,13 +21,13 @@ export const LinksHeader = Styled.h1`
 
 export const LinkContainer = Styled.a`
     display: flex;
-    color: white;
     width: auto;
     cursor: default;
 `;
 
 export const LinkText = Styled.div`
     font-size: 32px;
+    color: ${Colors.accentLight};
     padding-left: 50px;
     align-self: center;
 `;
@@ -35,25 +35,26 @@ export const LinkText = Styled.div`
 export const LinkGithub = Styled(Github)`
     height: 100px;
     width: 50px;
-    fill: white;
+    fill: ${Colors.accentLight};
     cursor: pointer;
 `;
 
 export const LinkResume = Styled(BriefCase)`
     height: 100px;
     width: 50px;
-    fill: white;
+    fill: ${Colors.accentLight};
     cursor: pointer;
 `;
 
 export const StyleBox = Styled.div`
     align-self: center;
-    opacity: 0.1;
+    margin-top: 400px;
+    opacity: 0.05;
     z-index: -1;
     width: 0;
     height: 0;
-    border: 450px solid transparent;
-    border-bottom-color: white;
+    border: 250px solid transparent;
+    border-bottom-color: ${Colors.accentLight};
     position: absolute;
 `;
 

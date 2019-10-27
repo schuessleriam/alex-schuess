@@ -4,7 +4,7 @@ import { AboutContainer,
          AboutContent,
          InfoBox,
          InfoBoxContent,
-         InfoBoxContentList,
+         InfoHighlight,
          InfoBoxHeader,
          ButtonContainer,
          LocationContainer,
@@ -14,7 +14,8 @@ import { AboutContainer,
          StyleBoxTwo,
          ReduxIcon,
          ReactIcon,
-         NodeIcon
+         NodeIcon,
+         ContentBox
 } from './about.styled';
 import CustomButton from '../custom-button/custom-button.component';
 import ReduxImage from './../../assets/reduxlogo.png';
@@ -24,34 +25,61 @@ const About = () => (
     <AboutContainer>
         <AboutHeader>About Me</AboutHeader>
         <AboutContent>
+
             <StyleBoxOne/>
             <StyleBoxTwo/>
             <ReduxIcon src={ReduxImage}/>
             <ReactIcon src={ReactImage}/>
             <NodeIcon/>
-            <InfoBox>
+            <ContentBox/>
+            <InfoBox education>
                 <InfoBoxHeader>Education</InfoBoxHeader>
-                <InfoBoxContent education>
+                <InfoBoxContent>
                     <span>
-                        I recieved my Bachelors of Science in Computer Science, with a Minor in Mathematics, 
-                        from Valparaiso University. While at Valpo, I compeated in NCAA D1 Track & Field and achieved 
-                        Horizon League Academic Honor Roll. I was a Presidential Scholarship Recipient and graduated 
-                        magna cum laude.
+                        I recieved my Bachelors of Science in <InfoHighlight>Computer Science</InfoHighlight>, 
+                        with a Minor in Mathematics, from <InfoHighlight>Valparaiso University</InfoHighlight>. 
+                        While at Valpo, I compeated in <InfoHighlight>NCAA D1 Track & Field</InfoHighlight> and achieved 
+                        Horizon League Academic Honor Roll. 
+                        I was a Presidential Scholarship Recipient and graduated <InfoHighlight>magna cum laude</InfoHighlight>.
                     </span>
                 </InfoBoxContent>
             </InfoBox>
-            <InfoBox>
-                <InfoBoxHeader>Techinical Skills</InfoBoxHeader>
-                <InfoBoxContentList>
-                    <li>HTML/CSS, PHP</li>
-                    <li>JavaScript :</li>
-                    <InfoBoxContentList>
-                        <li>React.js : Redux (Sagas), Styled Components</li> 
-                        <li>ES6, Node.js, jQuery (Ajax)</li>
-                    </InfoBoxContentList>
-                    <li>SQL, Firebase</li>
-                    <li>Java, Ruby, Python, C#</li>
-                </InfoBoxContentList>
+            <InfoBox skills>
+                <InfoBoxHeader>Related Skills</InfoBoxHeader>
+
+                <InfoBoxContent>
+                    <span>
+                        My Web Development experience begins with a strong understanding of 
+                        <InfoHighlight>&nbsp;HTML/CSS</InfoHighlight>, 
+                        likely implemented through
+                        <InfoHighlight>&nbsp;JSX&nbsp;</InfoHighlight>
+                        and 
+                        <InfoHighlight>&nbsp;Sass</InfoHighlight>.
+                        <InfoHighlight>&nbsp;JavaScript&nbsp;</InfoHighlight>
+                        is my language of choice, where lies experience in 
+                        <InfoHighlight>&nbsp;React</InfoHighlight>, 
+                        including 
+                        <InfoHighlight>&nbsp;Redux</InfoHighlight>,
+                        <InfoHighlight>&nbsp;Redux Sagas</InfoHighlight>, 
+                        and 
+                        <InfoHighlight>&nbsp;Styled Components</InfoHighlight>. 
+                        I have worked with 
+                        <InfoHighlight>&nbsp;jQuery&nbsp;</InfoHighlight>
+                        (<InfoHighlight>Ajax</InfoHighlight>) 
+                        alongside 
+                        <InfoHighlight>&nbsp;PHP</InfoHighlight>, 
+                        and with 
+                        <InfoHighlight>&nbsp;Node.js&nbsp;</InfoHighlight>
+                        comes more experience in 
+                        <InfoHighlight>&nbsp;ES6</InfoHighlight>. 
+                        Database experience comes in both 
+                        <InfoHighlight>&nbsp;SQL&nbsp;</InfoHighlight>
+                        form and nosql form through 
+                        <InfoHighlight>&nbsp;Firebase</InfoHighlight>. 
+                    </span>
+                </InfoBoxContent>
+
+
             </InfoBox>
             <InfoBox isFooter>
                 <LocationContainer>

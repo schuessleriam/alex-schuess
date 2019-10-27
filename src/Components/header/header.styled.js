@@ -1,5 +1,6 @@
 import Styled from 'styled-components';
 import {ReactComponent as GithubIcon} from './../../assets/mark-github.svg';
+import { Colors } from './../../global.styled';
 
 export const HeaderContainer = Styled.div`
     padding-bottom: 20px;
@@ -11,8 +12,8 @@ export const HeaderContainer = Styled.div`
     justify-content: space-between;
     position: fixed;
     z-index: 5;
-    //background: black;
-    //opacity: 0.2;
+    fill: ${Colors.accentLight};
+    color: ${Colors.accentLight};
 
 `;
 
@@ -33,7 +34,6 @@ export const LinkContainer = Styled.a`
 export const GithubLink = Styled(GithubIcon)`
     height: 50px;
     width: 25px;
-    fill: white;
 `;
 
 export const TabsContainer = Styled.div`

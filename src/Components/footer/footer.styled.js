@@ -6,7 +6,6 @@ export const FooterContainer = Styled.div`
     flex-direction: column;
     height: 100px;
     align-self: center;
-    color: white;
 `;
 
 export const ReturnButton = Styled(CustomButton)`

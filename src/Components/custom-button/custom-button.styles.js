@@ -1,28 +1,29 @@
 import Styled, { css } from 'styled-components';
+import { Colors } from './../../global.styled';
 
 const invertedButtonStyles = css`
-    background-color: white;
-    color: #5C7998;
+    background-color: ${Colors.accentLight};
+    color: ${Colors.primeDark};
     border: none;
     
     @media screen and (min-width: 800px){
         &:hover {
-          background-color: #5C7998;
-          color: white;
+          background-color: ${Colors.primeDark};
+          color: ${Colors.accentLight};
           border: none;
         }
     }
 `;
 
 const buttonStyles = css`
-background-color: #5C7998;
-    color: white;
+    background-color: ${Colors.primeDark};
+    color: ${Colors.accentLight};
     border: none;
 
     @media screen and (min-width: 800px){
         &:hover {
-            background-color: white;
-            color: #5C7998;
+            background-color: ${Colors.primeLight};
+            color: ${Colors.accentDark};
             border: 1px solid black;
         }
     }

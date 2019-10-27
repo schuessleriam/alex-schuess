@@ -4,6 +4,7 @@ import {CopyEmailContainer, Clippy, Email, Check} from './copy-email.styled';
 
 const CopyEmail = ({bigger}) => {
 
+
     const [emailHover, setEmailHover] = useState({
         show: false,
         copied: false
@@ -39,13 +40,13 @@ const CopyEmail = ({bigger}) => {
             onMouseEnter={handleEmailHover}
             onMouseLeave={handleNoEmailHover}
         >   
-            {
+            { //added verbousness to eliminate false positive console warning.
             emailHover.show && emailHover.copied ? 
-                <Check bigger={bigger}/>
+                bigger ? <Check bigger="true"/> : <Check/>
             : emailHover.show ?
-                <Clippy bigger={bigger}/> 
+                bigger ? <Clippy bigger="true"/> : <Clippy/> 
             :
-                <Email bigger={bigger}/> 
+                bigger ? <Email bigger="true"/> : <Email/>
             }        
         </CopyEmailContainer>
     );

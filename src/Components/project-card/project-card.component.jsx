@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import ProjectInfo from './../project-info/project-info.component';
+
 import { ProjectCardContainer, 
     ProjectHeader, 
     ProjectFooter, 
@@ -12,17 +14,20 @@ import { ProjectCardContainer,
     LinkText
 } from './project-card.styled';
 
+
+
 const ProjectCard = ({
     infoPage, 
-    livePage, 
+    livePage,
+    livePageTitle, 
     repo, 
-    projectImage,
-    projectIcon, 
+    projectImage, 
     title, 
     subTitle, 
     description}) => {
 
     const [linkHover, setLinkHover] = useState({isHover: false});
+    const [moreInfo, setMoreInfo] = useState({show: false});
 
     const handleHover = () => {
         setLinkHover({isHover: true});
@@ -33,7 +38,7 @@ const ProjectCard = ({
     }
 
     return (
-        <ProjectCardContainer {...linkHover}>
+        <ProjectCardContainer {...linkHover} onClick={linkHover.isHover ? null : () => setMoreInfo({show: !moreInfo.show})}>
             <HeaderImageContainer>
                 <HeaderImage src={projectImage}/> 
             </HeaderImageContainer>
@@ -43,7 +48,7 @@ const ProjectCard = ({
             { livePage ?
                 <LinkContainer href={livePage} onMouseEnter={handleHover} onMouseLeave={handleNoHover}> 
                     <BrowserLink/> 
-                    <LinkText>Visit The Live App</LinkText> 
+                    <LinkText>{livePageTitle}</LinkText> 
                 </LinkContainer>
             : <div/>
             }
@@ -52,6 +57,8 @@ const ProjectCard = ({
                 <LinkText>See The Code</LinkText> 
             </LinkContainer>
             <ProjectFooter>Click To Learn More</ProjectFooter>
+
+            { moreInfo.show ? <ProjectInfo infoPage={infoPage}/> : null}
         </ProjectCardContainer>
     );
 }

@@ -2,23 +2,21 @@ import Styled, { css } from 'styled-components';
 import {ReactComponent as EmailIcon} from './../../assets/mail.svg';
 import {ReactComponent as ClippyIcon} from './../../assets/clippy.svg';
 import {ReactComponent as CheckIcon} from './../../assets/check.svg';
+import { Colors } from './../../global.styled';
 
 export const CopyEmailContainer = Styled.div`
-    fill: white;
+    fill: ${Colors.accentLight};
+    cursor: pointer;
 `;
 
 const IconStyles = css`
     height: 50px;
     width: 25px;
-    cursor: pointer;
-    color: white;
 `;
 
 const IconStylesBigger = css`
     height: 100px;
     width: 50px;
-    cursor: pointer;
-    color: white;
 `;
 
 const GetIconStyles = (props) => {
