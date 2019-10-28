@@ -11,7 +11,7 @@ import ReviewTab from './../../assets/review_tab.gif';
 const LhsdInfo = () => (
     <ProjectInfoContainer>
         <ProjectInfoContent>
-            <ProjectHeader>VU Lutheran High School Directory - A Data Managment System</ProjectHeader>
+            <ProjectHeader>VU Lutheran High School Directory - A Data Management System</ProjectHeader>
             <ProjectSubHeader>About</ProjectSubHeader>
             <ProjectSection>
                 <SectionText>
@@ -19,14 +19,17 @@ const LhsdInfo = () => (
                 The application was built for the office of church relations to better handle 
                 their high school directory, at all levels. Our goal was to create a centralized
                 system that allowed for one source of entry and update across all forms of the directory. 
-                The publically viewable portion of this application can be 
+                The publicly viewable portion of this application can be 
                 found <InlineLink href='https://www.valpo.edu/church-relations/lhs-directory/'>Here.</InlineLink>
                 </SectionText>
             </ProjectSection>
 
             <ProjectSectionWithImage>
-                <SectionText>Under the 'new' tab, an Admin can add a new school into the system 
-                with all relavent information for the inital year. An admin can also add
+                
+                <SectionText>
+                <ProjectSubHeader>Adding New Data</ProjectSubHeader>
+                Under the 'new' tab, an Admin can add a new school into the system 
+                with all relevant information for the initial year. An admin can also add
                 other organizations the office stores, and add to the list of titles individual
                 school administrators can pick from.  </SectionText>
                 <SectionImage src={AddSchool} alt='Add School Example'/>
@@ -35,7 +38,10 @@ const LhsdInfo = () => (
             <Spacer/>
             
             <ProjectSectionWithImage>
-                <SectionText> After a School exists in the system, data can be altered and updated.
+               
+                <SectionText> 
+                <ProjectSubHeader>Updates and Review</ProjectSubHeader>
+                After a school exists in the system, data can be altered and updated.
                 School Administrators can update their yearly info directly into the central database.
                 After information has been altered, a directory admin can review the changes and 
                 choose to accept or deny the update. 
@@ -46,7 +52,10 @@ const LhsdInfo = () => (
             <Spacer/>
 
             <ProjectSectionWithImage>
-                <SectionText>Although school administrators can make updates directly, a directory 
+                
+                <SectionText>
+                <ProjectSubHeader>Admin Updates</ProjectSubHeader>
+                Although school administrators can make updates directly, a directory 
                 admin may need to alter data. To do this, the admin is given the option to update
                 any data directly inside the admin page. These changes are logged as well.</SectionText>
                 <SectionImage src={EditSchool} alt='Edit School Example'/>
@@ -55,7 +64,10 @@ const LhsdInfo = () => (
             <Spacer/>
 
             <ProjectSectionWithImage>
-                <SectionText>To achieve single data entry accross all systems, a directory admin 
+                
+                <SectionText>
+                <ProjectSubHeader>Exporting</ProjectSubHeader>
+                To achieve single data entry across all systems, a directory admin 
                 can export the current directory in multiple forms. Exported data can then be used 
                 for long term storage, information merges, and use in the directory's publication form. </SectionText>
                 <SectionImage src={AdminExport} alt='Export Example'/>

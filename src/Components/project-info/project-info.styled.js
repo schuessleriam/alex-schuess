@@ -33,7 +33,6 @@ export const ProjectHeader = Styled.h1`
 
 export const ProjectSubHeader = Styled.h2`
     font-size: 44px;
-    padding-top: 20px;
     align-self: flex-start;
 `;
 

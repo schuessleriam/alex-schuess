@@ -14,7 +14,7 @@ const Projects = () => {
                     infoPage='balbatross' 
                     livePage="https://balbatross.herokuapp.com"
                     livePageTitle='Visit The Live Website'
-                    title="Balbatross Apperal"
+                    title="Balbatross Apparel"
                     subTitle="A React App"
                     repo='https://github.com/schuessleriam/balbatross'
                     projectImage={BalbatrossIcon}

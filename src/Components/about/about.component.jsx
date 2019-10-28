@@ -36,9 +36,9 @@ const About = () => (
                 <InfoBoxHeader>Education</InfoBoxHeader>
                 <InfoBoxContent>
                     <span>
-                        I recieved my Bachelors of Science in <InfoHighlight>Computer Science</InfoHighlight>, 
+                        I received my Bachelor of Science in <InfoHighlight>Computer Science</InfoHighlight>, 
                         with a Minor in Mathematics, from <InfoHighlight>Valparaiso University</InfoHighlight>. 
-                        While at Valpo, I compeated in <InfoHighlight>NCAA D1 Track & Field</InfoHighlight> and achieved 
+                        While at Valpo, I competed in <InfoHighlight>NCAA D1 Track & Field</InfoHighlight> and achieved 
                         Horizon League Academic Honor Roll. 
                         I was a Presidential Scholarship Recipient and graduated <InfoHighlight>magna cum laude</InfoHighlight>.
                     </span>
@@ -49,12 +49,8 @@ const About = () => (
 
                 <InfoBoxContent>
                     <span>
-                        My Web Development experience begins with a strong understanding of 
-                        <InfoHighlight>&nbsp;HTML/CSS</InfoHighlight>, 
-                        likely implemented through
-                        <InfoHighlight>&nbsp;JSX&nbsp;</InfoHighlight>
-                        and 
-                        <InfoHighlight>&nbsp;Sass</InfoHighlight>.
+                        My web development experience begins with a strong understanding of 
+                        <InfoHighlight>&nbsp;HTML/CSS</InfoHighlight>. 
                         <InfoHighlight>&nbsp;JavaScript&nbsp;</InfoHighlight>
                         is my language of choice, where lies experience in 
                         <InfoHighlight>&nbsp;React</InfoHighlight>, 
@@ -72,9 +68,9 @@ const About = () => (
                         <InfoHighlight>&nbsp;Node.js&nbsp;</InfoHighlight>
                         comes more experience in 
                         <InfoHighlight>&nbsp;ES6</InfoHighlight>. 
-                        Database experience comes in both 
+                        My database experience comes in both 
                         <InfoHighlight>&nbsp;SQL&nbsp;</InfoHighlight>
-                        form and nosql form through 
+                        form and NoSQL form through 
                         <InfoHighlight>&nbsp;Firebase</InfoHighlight>. 
                     </span>
                 </InfoBoxContent>
