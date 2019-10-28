@@ -5,7 +5,9 @@ import { HeaderContainer,
     LinkContainer, 
     GithubLink,
     TabsContainer,
-    TabContainer
+    TabContainer,
+    HeaderBack,
+    HeaderBlur
 } from './header.styled.js';
 import CopyEmail from '../copy-email/copy-email.component.jsx';
 
@@ -21,6 +23,9 @@ const Header = () => {
       }
 
     return (
+        <div>
+        <HeaderBlur/>
+        <HeaderBack/>
         <HeaderContainer>
             <LinksContainer>
                 <LinkContainer>
@@ -33,10 +38,11 @@ const Header = () => {
 
             <TabsContainer>
                 <TabContainer onClick={() => scrollTo('home')}>Home</TabContainer>
-                <TabContainer onClick={() => scrollTo('about', 200)}>About</TabContainer>
+                <TabContainer onClick={() => scrollTo('about', 150)}>About</TabContainer>
                 <TabContainer onClick={() => scrollTo('projects')}>Projects</TabContainer>
             </TabsContainer>
         </HeaderContainer>
+        </div>
     );
 }
 

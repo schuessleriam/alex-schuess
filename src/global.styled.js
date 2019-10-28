@@ -11,16 +11,14 @@ export const Colors = {
 export const GlobalStyle = createGlobalStyle`
     body{
         margin: 0;
-        font-family: 'Open Sans Condensed', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
         color: white;
         background: ${Colors.main};
+    }
 
-        @media (max-width: 800px) {
-        }
-
-        @media (min-width: 1601px) {
-            font-size: 28px;
-        }
+    h1, h2{
+        font-style: normal;
     }
     
     a{

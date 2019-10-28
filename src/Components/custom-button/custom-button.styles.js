@@ -40,7 +40,7 @@ const GetButtonStyles = props => {
 };
 
 export const CustomButtonContainer = Styled.button`
-    min-width: 165px;
+    min-width: 250px;
     max-width: 200px;
     border-radius: 80px;
     width: auto;
@@ -50,7 +50,8 @@ export const CustomButtonContainer = Styled.button`
     padding: 0 35px 0 35px;
     font-size: 15px;
     text-transform: uppercase;
-    font-family: 'Open Sans Condensed';
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
     font-weight: bolder;
     cursor: pointer;
     display: flex;

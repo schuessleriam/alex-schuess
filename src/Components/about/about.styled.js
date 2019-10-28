@@ -21,8 +21,7 @@ export const AboutHeader = Styled.h1`
 export const AboutContent = Styled.div`
     width: 100%;
     display: grid;
-    grid-template-columns: 95px 30vw 1fr 50px;
-    grid-template-rows: 300px 350px 200px;
+    grid-template-columns: 95px 30% 1fr 50px;
     letter-spacing: 2px;
     line-height: 42px;
 
@@ -36,6 +35,7 @@ export const ReactIcon = Styled.img`
     margin-top: -150px;
     margin-left: -200px;
     opacity: 0.5;
+    z-index: 0;
 `;
 
 export const NodeIcon = Styled(NodeImage)`
@@ -46,6 +46,7 @@ export const NodeIcon = Styled(NodeImage)`
     margin-top: 200px;
     margin-left: 150px;
     opacity: 0.5;
+    z-index: 0;
 `;
 
 export const ReduxIcon = Styled.img`
@@ -56,6 +57,7 @@ export const ReduxIcon = Styled.img`
     margin-top: 500px;
     margin-left: -50px;
     opacity: 0.5;
+    z-index: 0;
 `;
 
 export const StyleBoxOne = Styled.div`

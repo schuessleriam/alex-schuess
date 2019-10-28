@@ -5,7 +5,7 @@ import CopyEmail from './../copy-email/copy-email.component';
 const Links = () => (
     <LinksContainer>
         <LinksHeader>Email & Links</LinksHeader>
-        <LinkContainer>
+        <LinkContainer href="https://github.com/schuessleriam">
             <LinkGithub/>
             <LinkText>Visit My Github</LinkText>
         </LinkContainer>

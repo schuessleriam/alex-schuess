@@ -11,7 +11,7 @@ const BalbatrossInfo = () => (
             <ProjectSubHeader>About</ProjectSubHeader>
             <ProjectSection>
                 <SectionText>
-                    This e-commerce platform contains the entire online shopping experience. The collections are 
+                    This e-commerce platform allows the shopping experience through multiple collections. The collections are 
                     stored in a Firebase Firestore and contributed across the site from there. Users can create an 
                     account with their email or Google account fast and secure using the Firebase Auth Library.
                     On the frontend, data is then stored in a Redux store, and async actions (like signing in)

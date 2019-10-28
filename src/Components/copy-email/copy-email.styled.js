@@ -5,18 +5,19 @@ import {ReactComponent as CheckIcon} from './../../assets/check.svg';
 import { Colors } from './../../global.styled';
 
 export const CopyEmailContainer = Styled.div`
-    fill: ${Colors.accentLight};
     cursor: pointer;
 `;
 
 const IconStyles = css`
     height: 50px;
     width: 25px;
+    fill: ${Colors.primeDark};
 `;
 
 const IconStylesBigger = css`
     height: 100px;
     width: 50px;
+    fill: ${Colors.accentLight};
 `;
 
 const GetIconStyles = (props) => {

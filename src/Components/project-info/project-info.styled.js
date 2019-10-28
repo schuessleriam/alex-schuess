@@ -10,7 +10,7 @@ export const ProjectInfoContainer = Styled.div`
     height: 90%;
     width: 96%;
     opacity: 0.98;
-    z-index: 10;
+    z-index: 5;
     top: 8%;
     left: 2%;
     color: ${Colors.primeDark};

@@ -6,7 +6,7 @@ import { Colors } from './../../global.styled';
 export const LinksContainer = Styled.div`
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 50%;
     height: 800px;
     align-self: center;
     color: ${Colors.accentLight};
