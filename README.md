@@ -1,3 +1,3 @@
 # alex-schuess
 
-A Portfolio Website Create from scratch using React and Styled components.
+A Portfolio Website using React and Styled components. Visit the site at alex.schuess.com
