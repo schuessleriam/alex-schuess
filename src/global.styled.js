@@ -9,6 +9,7 @@ export const Colors = {
 };
 
 export const GlobalStyle = createGlobalStyle`
+
     body{
         margin: 0;
         font-family: 'Roboto', sans-serif;
@@ -18,6 +19,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     h1, h2{
+        font-style: thin;
         font-style: normal;
     }
     

@@ -83,7 +83,9 @@ const About = () => (
                     <LocationText>&nbsp;&nbsp;Milwaukee, WI</LocationText>
                 </LocationContainer>
                 <ButtonContainer>
+                <a href='/AlexSchuesslerResume.pdf' download value='AlexSchuesslerResume'>
                     <CustomButton>Download Resume</CustomButton>
+                </a>
                 </ButtonContainer>
             </InfoBox>
         </AboutContent>

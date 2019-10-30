@@ -13,7 +13,7 @@ const Projects = () => {
                 <ProjectCard
                     infoPage='balbatross' 
                     livePage="https://balbatross.herokuapp.com"
-                    livePageTitle='Visit The Live Website'
+                    livePageTitle='Visit The Heroku Site'
                     title="Balbatross Apparel"
                     subTitle="A React App"
                     repo='https://github.com/schuessleriam/balbatross'

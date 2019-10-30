@@ -13,7 +13,11 @@ const Links = () => (
             <CopyEmail bigger/>
             <LinkText>Copy My Email</LinkText>
         </LinkContainer>
-        <LinkContainer>
+        <LinkContainer 
+            href='/AlexSchuesslerResume.pdf' 
+            download 
+            value='AlexSchuesslerResume'
+        >
             <LinkResume/>
             <LinkText>Download My Resume</LinkText>
         </LinkContainer>
