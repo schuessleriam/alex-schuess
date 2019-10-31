@@ -6,10 +6,10 @@ import { Colors } from './../../global.styled';
 export const LinksContainer = Styled.div`
     display: flex;
     flex-direction: column;
-    width: 50%;
     height: 800px;
     align-self: center;
     color: ${Colors.accentLight};
+    padding: 30px;
 `;
 
 export const LinksHeader = Styled.h1`
@@ -47,14 +47,16 @@ export const LinkResume = Styled(BriefCase)`
 `;
 
 export const StyleBox = Styled.div`
-    align-self: center;
-    margin-top: 400px;
-    opacity: 0.05;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    border: 250px solid transparent;
-    border-bottom-color: ${Colors.accentLight};
-    position: absolute;
+    @media screen and (min-width: 450px){
+        align-self: center;
+        margin-top: 400px;
+        opacity: 0.05;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        border: 250px solid transparent;
+        border-bottom-color: ${Colors.accentLight};
+        position: absolute;
+    }
 `;
 

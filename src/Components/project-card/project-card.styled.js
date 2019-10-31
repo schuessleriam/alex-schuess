@@ -15,7 +15,8 @@ export const HeaderImageContainer = Styled.div`
 `;
 
 export const HeaderImage = Styled.img`
-    width: 110px;
+    min-width: 90px;
+    min-height: 90px;
     height: auto;
 `;
 
@@ -44,8 +45,8 @@ export const ProjectFooter = Styled.h3`
 
 export const LinkContainer = Styled.a`
     display: grid;
-    grid-template-columns: 5vw 15vw;
-    padding-left: 50px;
+    grid-template-columns: 20% 80%;
+    padding-left: 10px;
     justify-content: center;
     align-content: center;
     color: ${Colors.accentDark};
@@ -72,7 +73,7 @@ export const LinkText = Styled.div`
 
 export const ProjectCardContainer = Styled.div`
     height: 550px;
-    width: 25vw;
+    min-width: 300px;
     background: ${Colors.accentLight};
     display: flex;
     flex-direction: column;
@@ -80,6 +81,7 @@ export const ProjectCardContainer = Styled.div`
     align-content: center;
     fill: ${Colors.accentDark};
     cursor: pointer;
+    margin: 0px 20px;
     padding: 0px 20px;
 
     &:hover {

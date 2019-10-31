@@ -20,6 +20,8 @@ export const ProjectsHeader = Styled.h1`
 export const ProjectsContent= Styled.div`
     display: flex;
     padding: 20px 10%;
-    justify-content: space-between;  
+    justify-content: space-between;
+    overflow-x: scroll;
+    overflow-y: hidden;  
 `;
 

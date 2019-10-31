@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { scroller } from 'react-scroll';
 import Photo from './../../assets/coverPhoto.jpg';
 import { HomePageContainer,
-     CoverPhotoContainer, 
+     CoverPhotoContainer,
+     PreCoverPhotoContainer, 
      HomePageContent, 
      Greeting,
      Description,
@@ -10,23 +11,29 @@ import { HomePageContainer,
      StyleBox
     } from './home.styled';
 
-const Home = () => (
-    <HomePageContainer>
-        <HomePageContent>
-            <Greeting>Hi, I'm Alex</Greeting>
-            <Description>Web Developer</Description>
-            <ProjectsButton inverted onClick={() => 
-                scroller.scrollTo('projects', {
-                    duration: 1000,
-                    delay: 0,
-                    smooth: 'easeInOutQuart'
-              })}>
-              See Projects
-              </ProjectsButton>
-            <StyleBox/>
-        </HomePageContent>
-        <CoverPhotoContainer src={Photo}/>
-    </HomePageContainer>
-);
+const Home = () =>{
+
+    const [imgLoaded, setImgLoaded] = useState({status: false});
+
+    return (
+        <HomePageContainer>
+            <HomePageContent>
+                <Greeting>Hi, I'm Alex</Greeting>
+                <Description>Web Developer</Description>
+                <ProjectsButton inverted onClick={() => 
+                    scroller.scrollTo('projects', {
+                        duration: 1000,
+                        delay: 0,
+                        smooth: 'easeInOutQuart'
+                })}>
+                See Projects
+                </ProjectsButton>
+                <StyleBox/>
+            </HomePageContent>
+            {imgLoaded.status === false ? <PreCoverPhotoContainer/> : null}
+            <CoverPhotoContainer src={Photo} onLoad={() => setImgLoaded({status: true})}/>
+        </HomePageContainer>
+    );
+}
 
 export default Home;

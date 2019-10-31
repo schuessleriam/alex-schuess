@@ -58,7 +58,7 @@ const ProjectCard = ({
             </LinkContainer>
             <ProjectFooter>Click To Learn More</ProjectFooter>
 
-            { moreInfo.show ? <ProjectInfo infoPage={infoPage}/> : null}
+            { moreInfo.show ? <ProjectInfo infoPage={infoPage}/> : null }
         </ProjectCardContainer>
     );
 }

@@ -61,6 +61,7 @@ export const TabsContainer = Styled.div`
     width: 300px;
     height: auto;
     padding-top: 5px;
+    padding-left: 30px;
 `;
 
 export const TabContainer = Styled.div`

@@ -13,100 +13,135 @@ export const AboutContainer = Styled.div`
 
 export const AboutHeader = Styled.h1`
     text-align: center;
-    height: 150px;
     font-size: 54px;
-    padding-top: 50px;
+
+    @media screen and (min-width: 950px){
+        height: 150px;
+        padding-top: 50px;
+    }
 `;
 
 export const AboutContent = Styled.div`
     width: 100%;
-    display: grid;
-    grid-template-columns: 95px 30% 1fr 50px;
-    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
     line-height: 42px;
 
+    @media screen and (min-width: 950px){
+        display: grid;
+        grid-template-columns: 95px 30% 1fr 50px;
+        letter-spacing: 2px;
+        line-height: 42px;
+    }
 `;
 
 export const ReactIcon = Styled.img`
-    height: 400px;
+    position: absolute;
+    opacity: 0.0;
+    height: 0px;
     width: auto;
-    grid-column: 2 / 3;
-    grid-row: 1 / 4;
-    margin-top: -150px;
-    margin-left: -200px;
-    opacity: 0.5;
-    z-index: 0;
+
+    @media screen and (min-width: 950px){
+        height: 400px;
+        align-self: unset;
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+        margin-top: -150px;
+        margin-left: -200px;
+        opacity: 0.5;
+        z-index: 0;
+    }
 `;
 
 export const NodeIcon = Styled(NodeImage)`
-    height: 300px;
+    position: absolute;
+    opacity: 0.0;
+    height: 0px;
     width: auto;
-    grid-column: 2 / 3;
-    grid-row: 1 / 4;
-    margin-top: 200px;
-    margin-left: 150px;
-    opacity: 0.5;
-    z-index: 0;
+
+    @media screen and (min-width: 950px){
+        height: 300px;
+        align-self: unset;
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+        margin-top: 200px;
+        margin-left: 150px;
+        opacity: 0.5;
+        z-index: 0;
+    }
 `;
 
 export const ReduxIcon = Styled.img`
-    height: 300px;
+    position: absolute;
+    opacity: 0.0;
+    height: 0px;
     width: auto;
-    grid-column: 2 / 3;
-    grid-row: 1 / 4;
-    margin-top: 500px;
-    margin-left: -50px;
-    opacity: 0.5;
-    z-index: 0;
+
+    @media screen and (min-width: 950px){
+        height: 300px;
+        align-self: unset;
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+        margin-top: 500px;
+        margin-left: -50px;
+        opacity: 0.5;
+        z-index: 0;
+    }
 `;
 
 export const StyleBoxOne = Styled.div`
-    margin-left: -300px;
-    margin-top: -150px;
-    grid-column: 1 / 3;
-    grid-row: 1 / 4;
-    opacity: 0.05;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    border: 600px solid transparent;
-    border-bottom-color: ${Colors.accentLight};
-    position: relative;
-    top: -600px;
+    @media screen and (min-width: 950px){
+        margin-left: -300px;
+        margin-top: -150px;
+        grid-column: 1 / 3;
+        grid-row: 1 / 4;
+        opacity: 0.05;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        border: 600px solid transparent;
+        border-bottom-color: ${Colors.accentLight};
+        position: relative;
+        top: -600px;
 
-    &:after {
-    content: '';
-    position: absolute;
-    left: -600px;
-    top: 600px;
-    width: 0;
-    height: 0;
-    border: 600px solid transparent;
-    border-top-color: ${Colors.accentLight};
+        &:after {
+        content: '';
+        position: absolute;
+        left: -600px;
+        top: 600px;
+        width: 0;
+        height: 0;
+        border: 600px solid transparent;
+        border-top-color: ${Colors.accentLight};
+        }
+    }
 `;
 
 export const StyleBoxTwo = Styled.div`
-    margin-left: -350px;
-    grid-column: 1 / 3;
-    grid-row: 1 / 4;
-    opacity: 0.15;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    border: 400px solid transparent;
-    border-bottom-color: ${Colors.accentDark};
-    position: relative;
-    top: -400px;
+    @media screen and (min-width: 950px){
+        margin-left: -350px;
+        grid-column: 1 / 3;
+        grid-row: 1 / 4;
+        opacity: 0.15;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        border: 400px solid transparent;
+        border-bottom-color: ${Colors.accentDark};
+        position: relative;
+        top: -400px;
 
-    &:after {
-    content: '';
-    position: absolute;
-    left: -400px;
-    top: 400px;
-    width: 0;
-    height: 0;
-    border: 400px solid transparent;
-    border-top-color: ${Colors.accentDark};
+        &:after {
+        content: '';
+        position: absolute;
+        left: -400px;
+        top: 400px;
+        width: 0;
+        height: 0;
+        border: 400px solid transparent;
+        border-top-color: ${Colors.accentDark};
+        }
+    }   
 `;
 
 export const InfoBox = Styled.div`
@@ -166,7 +201,7 @@ export const LocationText = Styled.span`
     font-size: 28px;
 `;
 
-export const ButtonContainer = Styled.div`
+export const ButtonContainer = Styled.a`
     display: flex;
     justify-content: center;
 `;

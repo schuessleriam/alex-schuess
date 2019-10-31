@@ -32,6 +32,7 @@ const About = () => (
             <ReactIcon src={ReactImage}/>
             <NodeIcon/>
             <ContentBox/>
+            
             <InfoBox education>
                 <InfoBoxHeader>Education</InfoBoxHeader>
                 <InfoBoxContent>
@@ -44,11 +45,11 @@ const About = () => (
                     </span>
                 </InfoBoxContent>
             </InfoBox>
+
             <InfoBox skills>
                 <InfoBoxHeader>Related Skills</InfoBoxHeader>
 
                 <InfoBoxContent>
-                    <span>
                         My web development experience begins with a strong understanding of 
                         <InfoHighlight>&nbsp;HTML/CSS</InfoHighlight>. 
                         <InfoHighlight>&nbsp;JavaScript&nbsp;</InfoHighlight>
@@ -72,20 +73,16 @@ const About = () => (
                         <InfoHighlight>&nbsp;SQL&nbsp;</InfoHighlight>
                         form and NoSQL form through 
                         <InfoHighlight>&nbsp;Firebase</InfoHighlight>. 
-                    </span>
                 </InfoBoxContent>
-
-
             </InfoBox>
+
             <InfoBox isFooter>
                 <LocationContainer>
                     <LocationIcon/>
                     <LocationText>&nbsp;&nbsp;Milwaukee, WI</LocationText>
                 </LocationContainer>
-                <ButtonContainer>
-                <a href='/AlexSchuesslerResume.pdf' download value='AlexSchuesslerResume'>
+                <ButtonContainer href='/AlexSchuesslerResume.pdf' download value='AlexSchuesslerResume'>
                     <CustomButton>Download Resume</CustomButton>
-                </a>
                 </ButtonContainer>
             </InfoBox>
         </AboutContent>

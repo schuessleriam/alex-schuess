@@ -13,40 +13,78 @@ export const CoverPhotoContainer = Styled.img`
     padding: 0px;
     border: 0px;
     opacity: 0.8;
+
+    @media screen and (max-width: 800px){
+        min-height: 800px;
+        object-fit: cover;
+    }
+`;
+
+export const PreCoverPhotoContainer = Styled.div`
+    width: 100%;
+    height: 800px;
+    padding: 0px;
+    border: 0px;
+    opacity: 0.7;
+    background: linear-gradient(${Colors.primeDark}, ${Colors.primeLight});
 `;
 
 export const HomePageContent = Styled.div`
-    display: grid;
-    grid-template-columns: 15vw 50vw 1fr 1fr;
-    grid-template-rows: 15vw 130px 180px 120px 1fr 1fr;
+
+    @media screen and (min-width: 800px){
+        display: grid;
+        grid-template-columns: 15vw 50vw 1fr 1fr;
+        grid-template-rows: 15vw 130px 130px 120px 1fr 1fr;
+    }
+
+    @media screen and (max-width: 800px){
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
     width: 100%;
     position: absolute;
     z-index: 1;
 `;
 
 export const Greeting = Styled.h1`
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
     font-size: 64px;
+    padding-top: 200px;
+
+    @media screen and (min-width: 800px){
+        padding-top: 0px;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
 `;
 
 export const Description = Styled.h3`
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
     font-size: 28px;
-    padding-left: 4px;
+    padding-bottom: 30px;
+
+    @media screen and (min-width: 800px){
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
 `;
 
 export const ProjectsButton = Styled(CustomButton)`
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
+    align-self: center;
+
+    @media screen and (min-width: 800px){
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
 `;
 
 export const StyleBox = Styled.div`
-    grid-column: 2 / 4;
-    grid-row: 2 / 6;
-    margin: -20px;
-    background: ${Colors.primeLight};
-    opacity: 0.1;
-
+    @media screen and (min-width: 950px){
+        grid-column: 2 / 4;
+        grid-row: 2 / 6;
+        margin: -20px;
+        background: ${Colors.primeLight};
+        opacity: 0.1;
+    }
 `;

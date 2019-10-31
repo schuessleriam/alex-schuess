@@ -29,16 +29,28 @@ export const ProjectHeader = Styled.h1`
     text-align: center;
     margin: 0px;
     padding-top: 50px;
+
+    @media screen and (max-width: 800px){
+        font-size: 34px;
+    }
 `;
 
 export const ProjectSubHeader = Styled.h2`
     font-size: 44px;
     align-self: flex-start;
+
+    @media screen and (max-width: 800px){
+        font-size: 28px;
+    }
 `;
 
 export const ProjectSection = Styled.div`
     font-size: 28px;
     padding-bottom: 50px;
+
+    @media screen and (max-width: 800px){
+        font-size: 24px;
+    }
 `;
 
 export const ProjectSectionWithImage = Styled.div`
@@ -46,6 +58,11 @@ export const ProjectSectionWithImage = Styled.div`
     grid-template-columns: 40% 60%;
     font-size: 28px;
     padding-bottom: 20px;
+
+    @media screen and (max-width: 800px){
+        font-size: 24px;
+        grid-template-columns: 100%;
+    }
 `;
 
 export const SectionText = Styled.div`
