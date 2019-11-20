@@ -13,11 +13,10 @@ export const AboutContainer = Styled.div`
 
 export const AboutHeader = Styled.h1`
     text-align: center;
-    font-size: 54px;
+    font-size: 44px;
 
     @media screen and (min-width: 950px){
-        height: 150px;
-        padding-top: 50px;
+        height: 70px;
     }
 `;
 
@@ -25,13 +24,13 @@ export const AboutContent = Styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    line-height: 42px;
+    line-height: 32px;
 
     @media screen and (min-width: 950px){
         display: grid;
-        grid-template-columns: 95px 30% 1fr 50px;
+        grid-template-columns: 95px 27% 1fr 50px;
+        grid-template-rows: 300px 400px 200px;
         letter-spacing: 2px;
-        line-height: 42px;
     }
 `;
 
@@ -45,8 +44,8 @@ export const ReactIcon = Styled.img`
         height: 400px;
         align-self: unset;
         grid-column: 2 / 3;
-        grid-row: 1 / 4;
-        margin-top: -150px;
+        grid-row: 1 / 2;
+        margin-top: -50px;
         margin-left: -200px;
         opacity: 0.5;
         z-index: 0;
@@ -63,9 +62,9 @@ export const NodeIcon = Styled(NodeImage)`
         height: 300px;
         align-self: unset;
         grid-column: 2 / 3;
-        grid-row: 1 / 4;
-        margin-top: 200px;
-        margin-left: 150px;
+        grid-row: 2 / 3;
+        margin-top: 300px;
+        margin-left: 100px;
         opacity: 0.5;
         z-index: 0;
     }
@@ -81,8 +80,8 @@ export const ReduxIcon = Styled.img`
         height: 300px;
         align-self: unset;
         grid-column: 2 / 3;
-        grid-row: 1 / 4;
-        margin-top: 500px;
+        grid-row: 3 / 4;
+        margin-top: 600px;
         margin-left: -50px;
         opacity: 0.5;
         z-index: 0;
@@ -149,8 +148,8 @@ export const InfoBox = Styled.div`
     flex-direction: column;
     grid-column: 3 / 4;
     justify-content: ${props => props.isFooter ? 'space-evenly' : null};
-    font-size: 26px;
-    padding: 40px;
+    font-size: 20px;
+    padding: 30px 15px 0;
     z-index: 2;
     grid-row: ${props => props.education ? '1 / 2' : props.skills ? '2 / 3' :  '3 / 4' };
 `;
@@ -164,10 +163,10 @@ export const ContentBox = Styled.div`
 `
 
 export const InfoBoxHeader = Styled.h1`
-    font-size: 36px;
+    font-size: 28px;
     text-align: center;
     margin: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 `;
 
 export const InfoBoxContentList = Styled.ul`
@@ -195,10 +194,11 @@ export const LocationIcon = Styled(Location)`
     fill: ${Colors.primeDark};
     height: 40px;
     width: 20px;
+    margin-top: -4px;
 `;
 
 export const LocationText = Styled.span`
-    font-size: 28px;
+    font-size: 24px;
 `;
 
 export const ButtonContainer = Styled.a`

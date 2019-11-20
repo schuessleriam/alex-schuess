@@ -28,18 +28,18 @@ export const ProjectHeader = Styled.h2`
 
 export const ProjectSubHeader = Styled.h3`
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     margin: 0px;
 `;
 
 export const DescriptionContainer = Styled.span`
-    text-align: center;
-    font-size: 18px;
+    text-align: justify;
+    font-size: 14px;
 `;
 
 export const ProjectFooter = Styled.h3`
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 1px;
 `;
 
@@ -73,7 +73,8 @@ export const LinkText = Styled.div`
 
 export const ProjectCardContainer = Styled.div`
     height: 550px;
-    min-width: 300px;
+    width: 310px;
+    min-width: 310px;
     background: ${Colors.accentLight};
     display: flex;
     flex-direction: column;

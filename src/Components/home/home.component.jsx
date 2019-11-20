@@ -18,7 +18,7 @@ const Home = () =>{
     return (
         <HomePageContainer>
             <HomePageContent>
-                <Greeting>Hi, I'm Alex</Greeting>
+                <Greeting>Welcome, I'm Alex</Greeting>
                 <Description>Web Developer</Description>
                 <ProjectsButton inverted onClick={() => 
                     scroller.scrollTo('projects', {

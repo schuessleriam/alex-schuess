@@ -38,7 +38,7 @@ const Header = () => {
 
             <TabsContainer>
                 <TabContainer onClick={() => scrollTo('home')}>Home</TabContainer>
-                <TabContainer onClick={() => scrollTo('about', 150)}>About</TabContainer>
+                <TabContainer onClick={() => scrollTo('about', 50)}>About</TabContainer>
                 <TabContainer onClick={() => scrollTo('projects')}>Projects</TabContainer>
             </TabsContainer>
         </HeaderContainer>

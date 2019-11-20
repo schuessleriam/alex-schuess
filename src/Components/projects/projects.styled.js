@@ -17,11 +17,23 @@ export const ProjectsHeader = Styled.h1`
     text-align: center;    
 `;
 
-export const ProjectsContent= Styled.div`
+export const ProjectsContentBox = Styled.div`
     display: flex;
-    padding: 20px 10%;
+`;
+
+export const ProjectsContentBoxBorder = Styled.div`
+    min-width: 10%;
+    height: 600px;
+    z-index: 5;
+`;
+
+export const ProjectsContent = Styled.div`
+    display: flex;
     justify-content: space-between;
-    overflow-x: scroll;
-    overflow-y: hidden;  
+
+    @media screen and (max-width: 1320px){
+        overflow-x: scroll;
+        overflow-y: hidden;  
+    }
 `;
 

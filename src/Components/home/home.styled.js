@@ -34,7 +34,7 @@ export const HomePageContent = Styled.div`
     @media screen and (min-width: 800px){
         display: grid;
         grid-template-columns: 15vw 50vw 1fr 1fr;
-        grid-template-rows: 15vw 130px 130px 120px 1fr 1fr;
+        grid-template-rows: 15vw 100px 80px 150px 1fr 1fr;
     }
 
     @media screen and (max-width: 800px){
@@ -50,7 +50,7 @@ export const HomePageContent = Styled.div`
 `;
 
 export const Greeting = Styled.h1`
-    font-size: 64px;
+    font-size: 44px;
     padding-top: 200px;
 
     @media screen and (min-width: 800px){

@@ -2,10 +2,10 @@ import Styled, { createGlobalStyle } from 'styled-components';
 
 export const Colors = {
     primeLight: '#FEFFFF',
-    accentLight: '#DEF2F1',
-    main: '#3AAFA9',
-    primeDark: '#17252A',
-    accentDark: '#2B7A78'
+    accentLight: '#DDEDF4',
+    main: '#1181B2',
+    primeDark: '#212221',
+    accentDark: '#44449B'
 };
 
 export const GlobalStyle = createGlobalStyle`
@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Roboto', sans-serif;
         font-style: italic;
         color: white;
-        background: ${Colors.main};
+        background: linear-gradient(180deg, rgba(221,237,244,1) 0%, rgba(17,129,178,1) 28%, rgba(68,68,155,1) 100%);
     }
 
     h1, h2{
