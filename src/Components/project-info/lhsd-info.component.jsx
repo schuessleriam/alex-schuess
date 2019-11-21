@@ -1,7 +1,7 @@
 import React from 'react';
 import { ProjectInfoContainer, ProjectInfoContent, ProjectHeader, ProjectSubHeader, 
     ProjectSection, SectionText, SectionList, SectionImage, ProjectSectionWithImage, 
-    ExitText, InlineLink, Spacer 
+    InlineLink, Spacer 
 } from './project-info.styled.js';
 import AddSchool from './../../assets/add_school.gif';
 import AdminExport from './../../assets/admin_export.gif';
@@ -81,7 +81,6 @@ const LhsdInfo = () => (
                     <li>Google Maps API</li>
                 </SectionList>
             </ProjectSection>
-            <ExitText>click anywhere to close</ExitText>
         </ProjectInfoContent>
     </ProjectInfoContainer>
 );

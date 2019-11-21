@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import ProjectInfo from './../project-info/project-info.component';
-
+import { withRouter } from 'react-router-dom';
 import { ProjectCardContainer, 
     ProjectHeader, 
     ProjectFooter, 
@@ -17,6 +16,7 @@ import { ProjectCardContainer,
 
 
 const ProjectCard = ({
+    history,
     infoPage, 
     livePage,
     livePageTitle, 
@@ -27,7 +27,6 @@ const ProjectCard = ({
     description}) => {
 
     const [linkHover, setLinkHover] = useState({isHover: false});
-    const [moreInfo, setMoreInfo] = useState({show: false});
 
     const handleHover = () => {
         setLinkHover({isHover: true});
@@ -38,7 +37,7 @@ const ProjectCard = ({
     }
 
     return (
-        <ProjectCardContainer {...linkHover} onClick={linkHover.isHover ? null : () => setMoreInfo({show: !moreInfo.show})}>
+        <ProjectCardContainer {...linkHover} onClick={linkHover.isHover ? null : () => { history.replace(`projects/${infoPage}`)}}>
             <HeaderImageContainer>
                 <HeaderImage src={projectImage}/> 
             </HeaderImageContainer>
@@ -57,10 +56,8 @@ const ProjectCard = ({
                 <LinkText>See The Code</LinkText> 
             </LinkContainer>
             <ProjectFooter>Click To Learn More</ProjectFooter>
-
-            { moreInfo.show ? <ProjectInfo infoPage={infoPage}/> : null }
         </ProjectCardContainer>
     );
 }
 
-export default ProjectCard;
+export default withRouter(ProjectCard);

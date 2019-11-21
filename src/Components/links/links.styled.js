@@ -23,6 +23,11 @@ export const LinkContainer = Styled.a`
     display: flex;
     width: auto;
     cursor: default;
+    padding-left: 20vw
+    
+    @media screen and (max-width: 800px){
+        padding-left: 5vw
+    }
 `;
 
 export const LinkText = Styled.div`
@@ -49,7 +54,7 @@ export const LinkResume = Styled(BriefCase)`
 export const StyleBox = Styled.div`
     @media screen and (min-width: 450px){
         align-self: center;
-        margin-top: 350px;
+        margin-top: 370px;
         opacity: 0.05;
         z-index: -1;
         width: 0;

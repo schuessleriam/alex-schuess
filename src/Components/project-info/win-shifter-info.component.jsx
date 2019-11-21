@@ -1,6 +1,6 @@
 import React from 'react';
 import { ProjectInfoContainer, ProjectInfoContent, ProjectHeader, ProjectSubHeader, 
-    ProjectSection, SectionText, SectionList, ExitText
+    ProjectSection, SectionText, SectionList
 } from './project-info.styled.js';
 
 const WinShifterInfo = () => (
@@ -29,7 +29,6 @@ const WinShifterInfo = () => (
                     <li>Node.js</li>
                 </SectionList>
             </ProjectSection>
-            <ExitText>click anywhere to close</ExitText>
         </ProjectInfoContent>
     </ProjectInfoContainer>
 );

@@ -1,9 +1,9 @@
 import React from 'react';
 import { ProjectInfoContainer, ProjectInfoContent, ProjectHeader, ProjectSubHeader, 
-    ProjectSection, SectionText, SectionList, SectionImage, ProjectSectionWithImage, 
-    ExitText, InlineLink 
+    ProjectSection, SectionText, SectionList, SectionImage, ProjectSectionWithImage, InlineLink 
 } from './project-info.styled.js';
 import Photo from './../../assets/StripeExample.gif';
+
 const BalbatrossInfo = () => (
     <ProjectInfoContainer>
         <ProjectInfoContent>
@@ -38,7 +38,6 @@ const BalbatrossInfo = () => (
                     <li>Stripe</li>
                 </SectionList>
             </ProjectSection>
-            <ExitText>click anywhere to close</ExitText>
         </ProjectInfoContent>
     </ProjectInfoContainer>
 );
