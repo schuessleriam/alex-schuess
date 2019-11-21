@@ -9,7 +9,7 @@ const invertedButtonStyles = css`
     @media screen and (min-width: 800px){
         &:hover {
           background-color: ${Colors.primeDark};
-          color: ${Colors.accentLight};
+          color: ${Colors.primeLight};
           border: none;
         }
     }
@@ -22,9 +22,9 @@ const buttonStyles = css`
 
     @media screen and (min-width: 800px){
         &:hover {
-            background-color: ${Colors.primeLight};
-            color: ${Colors.accentDark};
-            border: 1px solid black;
+            background-color: ${Colors.accentLight};
+            color: ${Colors.primeDark};
+            //border: 1px solid black;
         }
     }
 `;
@@ -49,8 +49,7 @@ export const CustomButtonContainer = Styled.button`
     line-height: 50px;
     font-size: 15px;
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
+    font-family: 'Muli', sans-serif;
     font-weight: bolder;
     cursor: pointer;
     display: flex;

@@ -50,11 +50,12 @@ export const HomePageContent = Styled.div`
 `;
 
 export const Greeting = Styled.h1`
-    font-size: 44px;
+    font-size: 36px;
     padding-top: 200px;
-
+    font-family: 'Roboto Mono', monospace;
     @media screen and (min-width: 800px){
         padding-top: 0px;
+        margin-top: 60px;
         grid-column: 2 / 3;
         grid-row: 2 / 3;
     }

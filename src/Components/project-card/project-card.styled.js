@@ -49,7 +49,7 @@ export const LinkContainer = Styled.a`
     padding-left: 10px;
     justify-content: center;
     align-content: center;
-    color: ${Colors.accentDark};
+    color: ${Colors.primeDark};
 
     &:hover {
         fill: ${Colors.primeDark};
@@ -80,7 +80,7 @@ export const ProjectCardContainer = Styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
-    fill: ${Colors.accentDark};
+    fill: ${Colors.primeDark};
     cursor: pointer;
     margin: 0px 20px;
     padding: 0px 20px;
@@ -95,7 +95,7 @@ export const ProjectCardContainer = Styled.div`
         }
 
         ${ProjectFooter} {
-            color: ${props => props.isHover ? null : Colors.primeDark};
+            color: ${props => props.isHover ? Colors.main : Colors.primeDark};
         }
     }
 `;

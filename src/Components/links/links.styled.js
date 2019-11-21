@@ -49,7 +49,7 @@ export const LinkResume = Styled(BriefCase)`
 export const StyleBox = Styled.div`
     @media screen and (min-width: 450px){
         align-self: center;
-        margin-top: 400px;
+        margin-top: 350px;
         opacity: 0.05;
         z-index: -1;
         width: 0;

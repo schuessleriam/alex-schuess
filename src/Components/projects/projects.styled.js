@@ -7,7 +7,7 @@ export const ProjectsContainer = Styled.div`
     width: 100%;
     height: 1000px;
     background: ${Colors.primeLight};
-    color: ${Colors.accentDark};
+    color: ${Colors.primeDark};
 `;
 
 export const ProjectsHeader = Styled.h1`

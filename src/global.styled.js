@@ -12,8 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 
     body{
         margin: 0;
-        font-family: 'Roboto', sans-serif;
-        font-style: italic;
+        font-family: 'Muli', sans-serif;
         color: white;
         background: linear-gradient(180deg, rgba(221,237,244,1) 0%, rgba(17,129,178,1) 28%, rgba(68,68,155,1) 100%);
     }

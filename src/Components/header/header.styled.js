@@ -6,7 +6,7 @@ export const HeaderContainer = Styled.div`
     padding-bottom: 20px;
     padding-right: 5%;
     padding-left: 2%;
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -14,7 +14,6 @@ export const HeaderContainer = Styled.div`
     z-index: 5;
     fill: ${Colors.primeDark};
     color: ${Colors.primeDark};
-    font-style: normal;
 `;
 
 export const HeaderBlur = Styled.div`
@@ -66,7 +65,7 @@ export const TabsContainer = Styled.div`
 
 export const TabContainer = Styled.div`
     display: flex;
-    padding-top: 10px;
+    padding-top: 15px;
     justify-content: center;
     align-content: center;
     cursor: pointer;
